@@ -102,7 +102,7 @@ app.post("/delete",(req,res)=>{
 })
 
 app.set('port',(process.env.PORT || 3000))
-app.listen(app.get('port'),"192.168.1.52",()=>{
+app.listen(app.get('port'),()=>{
   console.log("Server starte",app.get('port'))
 });
 module.exports = app;
